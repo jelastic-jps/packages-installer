@@ -1,0 +1,105 @@
+{
+  "jpsVersion": "0.6",
+  "jpsType": "update",
+  "build": "201705301600",
+  "application": {
+    "id": "packages-installer",
+    "name": "Packages installer",
+    "categories": [
+      "apps/dev-and-admin-tools"
+    ],
+    "version": "1.0",
+    "homepage": "https://github.com/jelastic-jps/packages-installer",
+    "logo": "http://findicons.com/files/icons/2198/dark_glass/128/rpm.png",
+    "description": {
+      "text": "Package installer",
+      "short": "Package installer."
+    },
+  "targetNodes": {
+      "nodeType": "*"
+    },
+    "procedures": [
+      {
+        "id": "log",
+        "onCall": {
+          "log": "${this.message}"
+        }
+      },
+      {
+        "id": "installPackage",
+        "onCall": [
+          {
+            "cmd": {
+              "commands": [
+                "yum install -y \"${this.packageInstall}\""
+              ],
+              "nodeType": "${targetNodes[0].nodeType}",
+              "user": "root"
+            }
+          }
+        ]
+      },
+      {
+        "id": "removePackage",
+        "onCall": [
+          {
+            "cmd": {
+              "commands": [
+                "yum remove -y \"${this.packageRemove}\""
+              ],
+              "nodeType": "${targetNodes[0].nodeType}",
+              "user": "root"
+            }
+          }
+        ]
+      }
+    ],
+    "menu": [
+      {
+        "confirmText": "Install package",
+        "settings": "packageInstall",
+        "loadingText": "Installing package...",
+        "caption": "Install package",
+        "procedure": "installPackage",
+        "successText": "The package set has been installed succesfully"
+      },
+      {
+        "confirmText": "Remove package",
+        "settings": "packageRemove",
+        "loadingText": "Removing package...",
+        "caption": "Remove package",
+        "procedure": "removePackage",
+        "successText": "The package set has been removed succesfully"
+      }
+    ],
+    "settings": {
+      "packageInstall": {
+        "fields": [
+          {
+            "regexText": "Incorrect package name.",
+            "regex": "^[a-z][-a-z0-9 ]*$",
+            "name": "packageInstall",
+            "caption": "Package:",
+            "type": "string",
+            "required": true
+          }
+        ]
+      },
+      "packageRemove": {
+        "fields": [
+          {
+            "regexText": "Incorrect package name.",
+            "regex": "^[a-z][-a-z0-9 ]*$",
+            "name": "packageRemove",
+            "caption": "Package:",
+            "type": "string",
+            "required": true
+          }
+        ]
+      }
+    },
+    "success": {
+      "text": "Your packages installer addon is installed"
+    }
+  }
+}
