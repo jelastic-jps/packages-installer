@@ -77,7 +77,6 @@
         "fields": [
           {
             "regexText": "Incorrect package name.",
-            "regex": "^[a-z][-a-z0-9 ]*$",
             "name": "packageInstall",
             "caption": "Package:",
             "type": "string",
@@ -89,7 +88,6 @@
         "fields": [
           {
             "regexText": "Incorrect package name.",
-            "regex": "^[a-z][-a-z0-9 ]*$",
             "name": "packageRemove",
             "caption": "Package:",
             "type": "string",
