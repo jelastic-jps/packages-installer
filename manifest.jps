@@ -31,7 +31,7 @@
           {
             "cmd": {
               "commands": [
-                "yum install -y \"${this.packageInstall}\""
+                "yum install -y ${this.packageInstall}"
               ],
               "nodeType": "${targetNodes[0].nodeType}",
               "user": "root"
@@ -45,7 +45,7 @@
           {
             "cmd": {
               "commands": [
-                "yum remove -y \"${this.packageRemove}\""
+                "yum remove -y ${this.packageRemove}"
               ],
               "nodeType": "${targetNodes[0].nodeType}",
               "user": "root"
