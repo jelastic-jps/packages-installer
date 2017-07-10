@@ -10,7 +10,7 @@
     ],
     "version": "1.0",
     "homepage": "https://github.com/jelastic-jps/packages-installer",
-    "logo": "https://github.com/jelastic-jps/packages-installer/raw/master/images/rpm.png",
+    "logo": "https://github.com/jelastic-jps/packages-installer/raw/master/images/logo.png",
     "description": {
       "text": "Package installer",
       "short": "Package installer."
