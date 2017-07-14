@@ -12,7 +12,7 @@
     "homepage": "https://github.com/jelastic-jps/packages-installer",
     "logo": "https://github.com/jelastic-jps/packages-installer/raw/master/images/rpm-logo.png",
     "description": {
-      "text": "The Yum Packages Installer add-on is used to integrate additional packages essential for your application but unavailable within Jelastic containers by default, including packages that require sudo permissions to be installed.",
+      "text": "The Yum Packages Installer add-on is designed to integrate additional packages essential for your application but unavailable within Jelastic containers by default, including packages that require sudo permissions to be installed.",
       "short": "The Yum Packages Installer to integrate additional development tools and RPM packages."
     },
   "targetNodes": {
