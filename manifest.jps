@@ -83,6 +83,12 @@
             "caption": "Package:",
             "type": "string",
             "required": true
+          },
+          {
+            "caption": "Instruction:",
+            "type": "displayfield",
+            "markup": "To install a package, specify its name and/or URL in the box above. For several entries, use space as a separator. Click <b>Apply</b> to complete installation.",
+            "required": true
           }
         ]
       },
@@ -93,6 +99,12 @@
             "name": "packageRemove",
             "caption": "Package:",
             "type": "string",
+            "required": true
+          },
+          {
+            "caption": "Instruction:",
+            "type": "displayfield",
+            "markup": "To remove a package, specify its name and/or URL in the box above. For several entries, use space as a separator. Click <b>Apply</b> to confirm removal.",
             "required": true
           }
         ]
