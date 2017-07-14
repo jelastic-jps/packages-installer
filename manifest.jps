@@ -61,7 +61,7 @@
         "loadingText": "Installing package...",
         "caption": "Install package",
         "procedure": "installPackage",
-        "submitButtonText": "To install a package, specify its name or URL in the box below. For several entries, use space as a separator.",
+        "titile": "To install a package, specify its name or URL in the box below. For several entries, use space as a separator.",
         "successText": "The package has been successfully installed"
       },
       {
@@ -70,7 +70,7 @@
         "loadingText": "Removing package...",
         "caption": "Remove package",
         "procedure": "removePackage",
-        "submitButtonText": "To remove a package, specify its name or URL in the box below. For several entries, use space as a separator.",
+        "title": "To remove a package, specify its name or URL in the box below. For several entries, use space as a separator.",
         "successText": "The package has been successfully removed"
       }
     ],
@@ -99,7 +99,7 @@
       }
     },
     "success": {
-      "text": "Click <b>Add-ons</b> for a destination node to locate Yum Packages Installer. To use the add-on, expand the menu in the upper-right corner, click <b>Install package</b> and specify name or URL of the required packages. To install several packages at once, use space as a separator."
+      "text": "Click <b>Add-ons</b> for a destination node to locate <b>Yum Packages Installer</b>. To use the add-on, expand the menu in the upper-right corner, click <b>Install package</b> and specify name and/or URL of the required packages."
     }
   }
 }
