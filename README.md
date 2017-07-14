@@ -41,7 +41,7 @@ node to locate the **Yum Packages Installer** add-on plank.
 Expand the menu in its upper-right corner, choose the **Install package** option and specify either name and/or URL of the
 required tools (if installing several packages at once, use space as a separator).
 
-![yum-install-package](images/yum-install-package.png)
+![install-package](images/install-package.png)
 
 **Note** that the add-on searches for a package specified by name within repositories listed in the **_/etc/yum.repos.d_**
 directory on a destination container.
