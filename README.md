@@ -5,8 +5,7 @@
 The Yum Packages Installer add-on enables to integrate packages essential for your application but unavailable within
 Jelastic containers by default, including packages that require sudo permissions to be installed. In particular, it can be
 used for the following purposes:
-- to integrate [*gcc*](https://gcc.gnu.org/) and additional dev tools (e.g. [*autoconf*]
-(http://www.gnu.org/software/autoconf/autoconf.html)) to compile extra PHP modules
+- to integrate [*gcc*](https://gcc.gnu.org/) and additional dev tools (e.g. [*autoconf*](http://www.gnu.org/software/autoconf/autoconf.html)) to compile extra PHP modules
 - to install RPM packages from repository by specifying direct link to a package
 
 The add-on utilizes [*yum*](http://yum.baseurl.org/) to install and remove packages on a destination container. 
