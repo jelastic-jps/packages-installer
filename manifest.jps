@@ -12,8 +12,8 @@
     "homepage": "https://github.com/jelastic-jps/packages-installer",
     "logo": "https://github.com/jelastic-jps/packages-installer/raw/master/images/rpm-logo.png",
     "description": {
-      "text": "Package installer",
-      "short": "Package installer."
+      "text": "The Yum Packages Installer add-on is used to integrate additional packages essential for your application but unavailable within Jelastic containers by default, including packages that require sudo permissions to be installed.",
+      "short": "The Yum Packages Installer to integrate additional development tools and RPM packages."
     },
   "targetNodes": {
       "nodeType": "*"
@@ -61,7 +61,8 @@
         "loadingText": "Installing package...",
         "caption": "Install package",
         "procedure": "installPackage",
-        "successText": "The package set has been installed succesfully"
+        "submitButtonText": "To install a package, specify its name or URL in the box below. For several entries, use space as a separator.",
+        "successText": "The package has been successfully installed"
       },
       {
         "confirmText": "Remove package",
@@ -69,7 +70,8 @@
         "loadingText": "Removing package...",
         "caption": "Remove package",
         "procedure": "removePackage",
-        "successText": "The package set has been removed succesfully"
+        "submitButtonText": "To remove a package, specify its name or URL in the box below. For several entries, use space as a separator.",
+        "successText": "The package has been successfully removed"
       }
     ],
     "settings": {
@@ -97,7 +99,7 @@
       }
     },
     "success": {
-      "text": "Your packages installer addon is installed"
+      "text": "Click <b>Add-ons</b> for a destination node to locate Yum Packages Installer. To use the add-on, expand the menu in the upper-right corner, click <b>Install package</b> and specify name or URL of the required packages. To install several packages at once, use space as a separator."
     }
   }
 }
