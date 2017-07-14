@@ -4,7 +4,7 @@
   "build": "201705301600",
   "application": {
     "id": "packages-installer",
-    "name": "Packages installer",
+    "name": "Yum Packages Installer",
     "categories": [
       "apps/dev-and-admin-tools"
     ],
