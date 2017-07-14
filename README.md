@@ -1,3 +1,5 @@
+![rpm-logo](images/rpm-logo.png)
+
 # Yum Packages Installer Add-On
 
 The Yum Packages Installer add-on enables to integrate packages essential for your application but unavailable within
