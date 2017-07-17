@@ -6,7 +6,8 @@ The Yum Packages Installer add-on enables to integrate packages essential for yo
 Jelastic containers by default, including packages that require sudo permissions to be installed. In particular, it can be
 used for the following purposes:
 - to integrate [*gcc*](https://gcc.gnu.org/) and additional dev tools (e.g. [*autoconf*](http://www.gnu.org/software/autoconf/autoconf.html)) to compile extra PHP modules
-- to install RPM packages from repository by specifying direct link to a package
+- to install RPM packages from repository by specifying direct link to a package or just its name
+
 
 The add-on utilizes [*yum*](http://yum.baseurl.org/) to install and remove packages on a destination container. 
 
@@ -50,5 +51,5 @@ Click **Apply** to complete installation.
 
 To see a list of installed packages, access a container via [SSH](https://docs.jelastic.com/ssh-gate) and run the **_rpm -qa_** command to print all available packages or **_rpm -qa | [grep](http://linuxcommand.org/man_pages/grep1.html) [options] PATTERN [FILE...]_** to print packages matching a pattern.
 
-To delete the earlier installed package, click **Remove package** and specify the same name or URL you’ve provided during
-installation. 
+To delete the earlier installed package, click **Remove package**, specify its name (not URL) and **Apply** the
+changes. 
