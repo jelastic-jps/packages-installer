@@ -104,7 +104,7 @@
           {
             "caption": "Instruction:",
             "type": "displayfield",
-            "markup": "To remove a package, specify its name or URL in the box above. For several entries, use space as a separator.",
+            "markup": "To remove a package, specify its name in the box above. For several entries, use space as a separator.",
             "required": true
           }
         ]
