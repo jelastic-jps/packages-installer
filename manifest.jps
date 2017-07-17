@@ -61,7 +61,6 @@
         "loadingText": "Installing package...",
         "caption": "Install package",
         "procedure": "installPackage",
-        "titile": "To install a package, specify its name or URL in the box below. For several entries, use space as a separator.",
         "successText": "The package has been successfully installed"
       },
       {
@@ -70,7 +69,6 @@
         "loadingText": "Removing package...",
         "caption": "Remove package",
         "procedure": "removePackage",
-        "title": "To remove a package, specify its name or URL in the box above. For several entries, use space as a separator.",
         "successText": "The package has been successfully removed"
       }
     ],
