@@ -13,10 +13,11 @@ The add-on utilizes [*yum*](http://yum.baseurl.org/) to install and remove packa
 
 **Type of nodes this add-on can be applied to:**
 
-You can run Packages Installer on any **CentOS-based** [software stacks](https://docs.jelastic.com/software-stacks-versions)
-within Jelastic Cloud, these are all available stacks with the exception of VPS ([Windows](https://docs.jelastic.com/win-vps)
-& [Ubuntu](https://docs.jelastic.com/vps-ubuntu)). You can also run the add-on to install packages within custom non
-certified [**Docker**](https://docs.jelastic.com/dockers-overview) containers, as an alternative to using [Jelastic SSH Gate](https://docs.jelastic.com/ssh-gate) with root permissions. 
+You can run Packages Installer on any **CentOS-based** сщтефштукы within Jelastic Cloud, these are all available stacks with
+the exception of VPS ([Windows](https://docs.jelastic.com/win-vps) & [Ubuntu](https://docs.jelastic.com/vps-ubuntu)). You can
+also run the add-on to install packages within custom non
+certified [**Docker**](https://docs.jelastic.com/dockers-overview) containers, as an alternative to using [Jelastic SSH Gate
+(https://docs.jelastic.com/ssh-gate) with root permissions. 
 
 To learn more about [Jelastic Add-ons](https://github.com/jelastic-jps/jpswiki/wiki/Jelastic-Addons) and their usage, refer
 to the linked guide. 
