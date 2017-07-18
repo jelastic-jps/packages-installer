@@ -37,6 +37,8 @@ When you are finished, click **Install** to continue.
 When installation is completed, **Close** the appeared confirmation message and click **Add-ons** next to the destination
 node to locate the **Yum Packages Installer** add-on plank.
 
+### Installing a Package
+
 ![yum-packages-installer-add-on](images/yum-packages-installer-add-on.png)
 
 Expand the menu in its upper-right corner, choose the **Install package** option and specify either name and/or URL of the
@@ -51,5 +53,14 @@ Click **Apply** to complete installation.
 
 To see a list of installed packages, access a container via [SSH](https://docs.jelastic.com/ssh-gate) and run the **_rpm -qa_** command to print all available packages or **_rpm -qa | [grep](http://linuxcommand.org/man_pages/grep1.html) [options] PATTERN [FILE...]_** to print packages matching a pattern.
 
-To delete the earlier installed package, click **Remove package**, specify its name (not URL) and **Apply** the
-changes. 
+### Deleting a Package
+
+To delete the earlier installed package, click **Remove package** and specify its name (not URL). 
+
+![yum-remove-package](images/yum-remove-package.png)
+
+Click **Apply** to confirm removal.
+
+**Note** that if you have several versions of the same package, you need to specify a particular package, e.g. *libcouchbase-2.7.5-1.el7.remi.x86_64*. Otherwise, if specifying only *libcouchbase*, all versions of the package will be removed. 
+
+To see a full list of packages with their names, access a container via [SSH](https://docs.jelastic.com/ssh-gate) and run the **_rpm -qa_** command as described in the section above.
