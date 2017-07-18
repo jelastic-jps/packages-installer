@@ -34,10 +34,11 @@ In the installation dialog box, specify the following details:
 
 When you are finished, click **Install** to continue.
 
-When installation is completed, **Close** the appeared confirmation message and click **Add-ons** next to the destination
-node to locate the **Yum Packages Installer** add-on plank.
+When installation is completed and **Close** the appeared confirmation message.
 
 ### Installing a Package
+
+Click **Add-ons** next to the destination node to locate the **Yum Packages Installer** add-on plank.
 
 ![yum-packages-installer-add-on](images/yum-packages-installer-add-on.png)
 
