@@ -54,7 +54,7 @@ Click **Apply** to complete installation.
 
 To see a list of installed packages, access a container via [SSH](https://docs.jelastic.com/ssh-gate) and run the **_rpm -qa_** command to print all available packages or **_rpm -qa | [grep](http://linuxcommand.org/man_pages/grep1.html) [options] PATTERN [FILE...]_** to print packages matching a pattern.
 
-### Deleting a Package
+### Removing a Package
 
 To delete the earlier installed package, click **Remove package** and specify its name (not URL). 
 
@@ -64,4 +64,4 @@ Click **Apply** to confirm removal.
 
 **Note** that if you have several versions of the same package, you need to specify a particular package, e.g. *libcouchbase-2.7.5-1.el7.remi.x86_64*. Otherwise, if specifying only *libcouchbase*, all versions of the package will be removed. 
 
-To see a full list of packages with their names, access a container via [SSH](https://docs.jelastic.com/ssh-gate) and run the **_rpm -qa_** command as described in the section above.
+To see a full list of packages and their names, access a container via [SSH](https://docs.jelastic.com/ssh-gate) and run the **_rpm -qa_** command as described in the section above.
